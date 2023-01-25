@@ -3,40 +3,41 @@ import { StyleSheet } from "react-native"
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 5,
-    paddingVertical: 10,
-    alignItems: 'center'
+    alignItems: "center",
   },
   title: {
     fontSize: 18,
-    color: '#252525',
-    fontWeight: 'bold',
-    paddingVertical: 20
+    fontFamily: "Karma-Medium",
+    color: '#212121',
+    textAlign: "center",
+    paddingVertical: 20,
   },
   inputContainer: {
+    justifyContent: "center",
+    alignItems: "center",
     marginHorizontal: 20,
-    justifyContent: 'center',
-    alignItems: 'center'
+    paddingVertical: 20,
   },
   label: {
-    paddingVertical: 20,
-    color: '#252525',
-    fontSize: 14,
-    fontWeight: 'bold'
+    fontSize: 15,
+    color: '#2121121',
+    paddingVertical: 5,
+    textAlign: "center",
+    fontFamily: "Karma-Regular",
   },
   input: {
-    width: '100%',
-    minWidth: 80,
-    textAlign: 'center',
-    fontSize: 25,
-    borderBottomColor: "#9DAABE",
+    width: "100%",
+    borderBottomColor: '#9DAABE',
     borderBottomWidth: 1,
-    paddingVertical: 10
+    minWidth: 70,
+    fontSize: 22,
+    paddingVertical: 10,
+    textAlign: "center",
   },
-  buttomContainer: {
-    flexDirection: 'row',
-    marginTop: 30,
-    width: '75%',
-    justifyContent: 'space-around'
+  buttonContainer: {
+    flexDirection: "row",
+    width: "75%",
+    justifyContent: "space-evenly",
+    marginTop: 20,
   }
 }); 
