@@ -1,12 +1,14 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, StatusBar } from "react-native"
+import { colors } from '../../constants'
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#9DAABE',
+    backgroundColor: colors.primary,
     height: 120,
     justifyContent: 'center',
     alignItems: "center",
-    paddingTop: 20
+    paddingTop: 20,
+    marginTop: StatusBar.currentHeight,
   },
   title: {
     fontSize: 20,
