@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import { styles } from './styles'
 import { Header } from './components'
 import { StartGame } from './screens'
