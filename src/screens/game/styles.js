@@ -2,6 +2,9 @@ import { StyleSheet } from "react-native"
 import { colors } from '../../constants'
 
 export const styles = StyleSheet.create({
+  body: {
+    position: 'relative',
+  },
   container: {
     justifyContent: "center",
     alignItems: 'center',
@@ -25,5 +28,10 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 40,
     width: '100%',
     justifyContent: 'space-between',
+  },
+  gobackContainer: {
+    position: 'absolute',
+    bottom: -350,
+    left: 50
   }
 }); 

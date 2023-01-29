@@ -4,7 +4,7 @@ import { styles } from './styles'
 import { Card, NumberContainer } from '../../components'
 import { colors } from '../../constants'
 
-const Game = ({ userNumber }) => {
+const Game = ({ userNumber, onHandleGoBack }) => {
 
   const generateRandomNumber = (min, max, exclude) => {
     min = Math.ceil(min);
@@ -29,7 +29,10 @@ const Game = ({ userNumber }) => {
           <Button title='Decrease' onPress={() => null} color={colors.primary}/>
           <Button title='Increase' onPress={() => null} color={colors.primary}/>
         </View>
-        </Card>
+      </Card>
+      <View style={styles.gobackContainer}>
+        <Button title='Go Back' color={colors.primary} onPress={onHandleGoBack}/>
+      </View>
     </View>
   );
 }

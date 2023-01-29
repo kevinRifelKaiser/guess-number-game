@@ -23,10 +23,14 @@ const App = () => {
     setUserNumber(selectedNumber);
   }
 
+  const onHandleGoBack = () => {
+    setUserNumber(null);
+  }
+
   const Screen = () => {
     return(
       userNumber ?
-      <Game userNumber={userNumber}/> :
+      <Game userNumber={userNumber} onHandleGoBack={onHandleGoBack}/> :
       <StartGame  onHandleStart={onHandleStart}/>
     );
   }
