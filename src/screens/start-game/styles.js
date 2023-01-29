@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
   },
   inputContainer: {
     justifyContent: "center",
+    width: '70%',
     alignItems: "center",
     marginHorizontal: 20,
     paddingVertical: 20,
@@ -25,7 +26,6 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   input: {
-    width: "100%",
     borderBottomColor: colors.primary,
     borderBottomWidth: 2,
     minWidth: 70,
@@ -40,9 +40,9 @@ export const styles = StyleSheet.create({
     marginTop: 20,
   },
   confirmed: {
-    width: '60%',
+    width: '70%',
     height: 200,
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
     alignItems: 'center',
     marginVertical: 20
   },

@@ -4,7 +4,7 @@ import { styles } from './styles'
 import { Card, NumberContainer } from '../../components'
 import { colors } from '../../constants'
 
-const StartGame = () => {
+const StartGame = ({ onHandleStart }) => {
 
   const [inputValue, setInputValue] = useState('');
   const [isConfirmed, setIsConfirmed] = useState(false);
@@ -31,9 +31,7 @@ const StartGame = () => {
   }
 
   const onHandleStartGame = () => {
-    return (
-      null
-    );
+    onHandleStart(selectedNumber);
   }
 
   const Confirmed = () => {
