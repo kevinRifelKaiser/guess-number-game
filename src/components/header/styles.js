@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight,
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold'
+    fontSize: 22,
+    fontFamily: 'MavenPro-Bold',
   }
 });

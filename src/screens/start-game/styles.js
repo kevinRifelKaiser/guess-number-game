@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
+    fontFamily: 'MavenPro',
     color: colors.text,
     textAlign: "center",
     paddingVertical: 20,
@@ -21,6 +22,7 @@ export const styles = StyleSheet.create({
   },
   label: {
     fontSize: 15,
+    fontFamily: 'MavenPro',
     color: colors.text,
     paddingVertical: 5,
     textAlign: "center",
@@ -28,6 +30,7 @@ export const styles = StyleSheet.create({
   input: {
     borderBottomColor: colors.primary,
     borderBottomWidth: 2,
+    fontFamily: 'MavenPro',
     minWidth: 70,
     fontSize: 22,
     paddingVertical: 10,

@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   },
   gameTitle: {
     fontSize: 18,
+    fontFamily: 'MavenPro',
     marginTop: 20,
     color: colors.text,
   },
