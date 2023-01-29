@@ -1,7 +1,7 @@
 import { View, Text, TextInput, Button, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
 import { useState } from 'react'
 import { styles } from './styles'
-import { Card } from '../../components'
+import { Card, NumberContainer } from '../../components'
 import { colors } from '../../constants'
 
 const StartGame = () => {
@@ -30,6 +30,24 @@ const StartGame = () => {
     }    
   }
 
+  const onHandleStartGame = () => {
+    return (
+      null
+    );
+  }
+
+  const Confirmed = () => {
+    return (
+      isConfirmed ?
+      <Card style={styles.confirmed}>
+        <Text style={styles.confirmedTitle}>Selected number:</Text>
+        <NumberContainer number={selectedNumber}/>
+        <Button title='Start game' onPress={onHandleStartGame} color={colors.primary}/>
+      </Card> : 
+      null
+    );
+  }
+
   return(
     <TouchableWithoutFeedback
       onPress={() => {
@@ -51,6 +69,7 @@ const StartGame = () => {
             <Button title='Confirm' onPress={onHandleConfirm} color={colors.secondary} />
           </View>
         </Card>
+        <Confirmed />
       </View>
     </TouchableWithoutFeedback>
   );

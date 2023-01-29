@@ -38,5 +38,16 @@ export const styles = StyleSheet.create({
     width: "75%",
     justifyContent: "space-evenly",
     marginTop: 20,
+  },
+  confirmed: {
+    width: '60%',
+    height: 200,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginVertical: 20
+  },
+  confirmedTitle: {
+    fontSize: 15,
+    color: colors.text,
   }
 }); 
