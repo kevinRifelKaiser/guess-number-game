@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { View, ActivityIndicator } from 'react-native'
 import { styles } from './styles'
 import { Header } from './components'
-import { StartGame, Game } from './screens'
+import { StartGame, Game, GameOver } from './screens'
 import { useFonts } from 'expo-font'
 import { colors } from './constants'
 
@@ -17,21 +17,37 @@ const App = () => {
     "MavenPro-SemiBold": require("../assets/fonts/MavenPro-SemiBold.ttf")
   });
 
-  const [userNumber, setUserNumber] = useState(null)
+  const [userNumber, setUserNumber] = useState(null);
+  const [roundsTaken, setRoundstaken] = useState(0);
   
   const onHandleStart = (selectedNumber) => {
     setUserNumber(selectedNumber);
   }
+
+  const onHandleGameOver = (roundsNumber) => {
+    setRoundstaken(roundsNumber);
+  } 
 
   const onHandleGoBack = () => {
     setUserNumber(null);
   }
 
   const Screen = () => {
+
+    if (!userNumber) {
+      return (
+        <StartGame  onHandleStart={onHandleStart}/>
+      );
+    }
+
+    if (userNumber && roundsTaken === 0) {
+      return(
+        <Game userNumber={userNumber} onHandleGameOver={onHandleGameOver} onHandleGoBack={onHandleGoBack}/>
+      );
+    }
+
     return(
-      userNumber ?
-      <Game userNumber={userNumber} onHandleGoBack={onHandleGoBack}/> :
-      <StartGame  onHandleStart={onHandleStart}/>
+      <GameOver roundsTaken={roundsTaken}/>
     );
   }
 
