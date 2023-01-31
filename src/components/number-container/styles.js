@@ -1,17 +1,19 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from "react-native";
 import { colors } from "../../constants";
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.secondary,
+    backgroundColor: colors.primary,
     width: 60,
     height: 60,
-    justifyContent: 'center',
-    alignItems: 'center',
+    borderColor: colors.black,
+    borderWidth: 1,
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 5,
   },
   number: {
     fontSize: 25,
-    fontFamily: 'MavenPro-Bold'
-  }
+    fontFamily: "MavenPro-Bold",
+  },
 });
