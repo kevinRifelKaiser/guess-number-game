@@ -1,16 +1,18 @@
-import { StyleSheet, StatusBar } from "react-native"
-import { colors } from '../../constants'
+import { StyleSheet, StatusBar, Dimensions } from "react-native";
+import { colors } from "../../constants";
+
+const { height } = Dimensions.get("screen");
 
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.primary,
-    height: 120,
-    justifyContent: 'center',
+    height: height * 0.12,
+    justifyContent: "center",
     alignItems: "center",
     marginTop: StatusBar.currentHeight,
   },
   title: {
     fontSize: 22,
-    fontFamily: 'MavenPro-Bold',
-  }
+    fontFamily: "MavenPro-Bold",
+  },
 });

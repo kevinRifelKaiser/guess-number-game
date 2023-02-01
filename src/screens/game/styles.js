@@ -1,37 +1,40 @@
-import { StyleSheet } from "react-native"
-import { colors } from '../../constants'
+import { StyleSheet } from "react-native";
+import { colors } from "../../constants";
 
 export const styles = StyleSheet.create({
   body: {
-    position: 'relative',
+    position: "relative",
   },
   container: {
     justifyContent: "center",
-    alignItems: 'center',
+    alignItems: "center",
+  },
+  containerScroll: {
+    flex: 1,
   },
   gameCard: {
-    marginTop: 20,
+    marginVertical: 10,
     height: 225,
-    width: '80%',
-    alignItems: 'center',
-    justifyContent: 'space-between'
+    width: "80%",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   gameTitle: {
     fontSize: 18,
-    fontFamily: 'MavenPro',
+    fontFamily: "MavenPro",
     marginTop: 20,
     color: colors.text,
   },
   buttonsContainer: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingVertical: 10,
     paddingHorizontal: 40,
-    width: '100%',
-    justifyContent: 'space-between',
+    width: "100%",
+    justifyContent: "space-between",
   },
   gobackContainer: {
-    position: 'absolute',
+    position: "absolute",
     bottom: -350,
-    left: 50
-  }
-}); 
+    left: 50,
+  },
+});

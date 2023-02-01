@@ -5,11 +5,18 @@ export const styles = StyleSheet.create({
   container: {
     alignItems: "center",
   },
-  cardContainer: {
+  cardContainerPortrait: {
     width: "70%",
     alignItems: "center",
     marginVertical: 40,
     paddingBottom: 20,
+  },
+  cardContainerLandscape: {
+    width: "90%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginVertical: 20,
   },
   image: {
     width: 200,
@@ -26,5 +33,6 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     color: colors.text,
     fontFamily: "MavenPro-ExtraBold",
+    marginBottom: 20,
   },
 });
